@@ -1,0 +1,26 @@
+.card1{
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    transform: translateY(50px);
+}
+.card2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.jumbotron{
+    background-image: url('../CSS/dna.jpg');
+    filter: blur(100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: blanchedalmond;
+}
+
+
