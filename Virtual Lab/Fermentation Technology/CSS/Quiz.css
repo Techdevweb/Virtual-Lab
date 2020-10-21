@@ -1,41 +1,46 @@
-:root{
-    --col-wrong:0;
-    --col-correct:145;
-    --col-neutral:50;
+.jumbotron{
+    background-image: url('../CSS/dna.jpg');
+    filter: blur(100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.btn.correct{
-    background-color:green;
+
+body{
+    height: 50rem;
+    background-color: rgb(215, 240, 240);
 }
 
-.btn.wrong{
-    background-color: red;
+.text{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: blanchedalmond;
 }
 
-.hide{
-    display: none;
+.card{
+    height: 35%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    margin: 20px 0;
-  }
-
-.btn{
-    --col: var(--col-neutral);
-  border: 1px solid hsl(var(--col), 100%, 30%);
-  background-color: hsl(var(--col), 100%, 50%);
-  border-radius: 30px 1px;
-  padding: 5px 10px;
-  color: black;
-  outline: none;
-  box-shadow: 0 0 10px 2px;
-  font-size: 30px;
+.start{
+    background-color: cornflowerblue;
+}
+#simulation{
+    height: 45%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 
-#question{
-    font-size: 30px;
+#simulation1{
+    height: 25%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 
+#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8,#line9,#line10,#line11,#line12{
+    visibility: hidden;
+}
+
+.background{
+    background-color: rgb(17, 223, 17);
+}
