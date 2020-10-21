@@ -1,0 +1,43 @@
+:root{
+    --col-wrong:0;
+    --col-correct:145;
+    --col-neutral:50;
+}
+
+.btn.correct{
+    background-color:green;
+}
+
+.btn.wrong{
+    background-color: red;
+}
+
+.hide{
+    display: none;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+.btn{
+    --col: var(--col-neutral);
+  border: 1px solid hsl(var(--col), 100%, 30%);
+  background-color: hsl(var(--col), 100%, 50%);
+  border-radius: 30px 1px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  box-shadow: 0 0 10px 2px;
+  font-size: 30px;
+}
+
+#question{
+    font-size: 30px;
+}
+
+
+
