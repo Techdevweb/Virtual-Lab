@@ -1,13 +1,3 @@
-.card1{
-    opacity: 0;
-    transition: 0.5s all ease-in-out;
-    transform: translateY(50px);
-}
-.card2{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 .jumbotron{
     background-image: url('../CSS/dna.jpg');
     filter: blur(100%);
@@ -17,10 +7,40 @@
     background-size: cover;
 }
 
+
+body{
+    height: 50rem;
+    background-color: rgb(215, 240, 240);
+}
+
 .text{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
     color: blanchedalmond;
 }
 
+.card{
+    height: 35%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+}
 
+.start{
+    background-color: cornflowerblue;
+}
+#simulation{
+    height: 45%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+#simulation1{
+    height: 25%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8,#line9,#line10,#line11,#line12{
+    visibility: hidden;
+}
+
+.background{
+    background-color: rgb(17, 223, 17);
+}
