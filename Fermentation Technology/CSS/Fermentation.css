@@ -9,7 +9,7 @@
 
 
 body{
-    height: 50rem;
+    height: 10rem;
     background-color: rgb(215, 240, 240);
 }
 
@@ -28,12 +28,12 @@ body{
     background-color: cornflowerblue;
 }
 #simulation{
-    height: 45%;
+    height: 150%;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 
 #simulation1{
-    height: 25%;
+    height: 15rem;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 
