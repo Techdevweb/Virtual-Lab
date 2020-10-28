@@ -36,33 +36,12 @@
                 <br>
                 <h2 class="text-center">Procedure</h2>
                 <hr style="background-color:cadetblue; width: 30%;">
-                <div class="card">
+                <div class="card card1">
                     <div class="card-body" style="background-color: aqua;">
                         <div class="row">
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line1" class="d-index p-3">
-                                1. Add 5ml of ethyl acetate in one reagent bottle and 100ml 0.5N HCl in other. Keep
-                                these bottles at room temperature for 10 min.
-                            </p>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line2" class="d-index p-3">
-                                2. Fill the burette with 0.1N NaOH.
-                            </p>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line3" class="d-index p-3">
-                                3. Take some ice in conical flask (to stop the hydrolysis) and add 2 drops of
-                                phenolphthalein (indicator) in it.
-                            </p>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line4" class="d-index p-3">
-                                4. Now mix the both reagent bottles to each other and quickly pipette out 5ml of product
-                                sample which is said to be the sample at time 0 and titrate it with 0.1N NaOH by adding
-                                it in conical flasks containing ice + phenolphthalein. Note down the burette reading
-                                asB.R. (0)
-                            </p>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line5" class="d-index p-3">
-                                5. Similarly titrate samples at 10, 20, 30, 40, 50, infinity minutes and note down the
-                                burette readings as B.R.(t)
-                            </p>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="line6" class="d-index p-3">
-                                6. Calculate CA and K for each reading respectively
-                            </p>
+                            <p class="font-weight-normal font-italic" id='procedure' style="font-size: 20px;">
+                                <em>Press Start to start the
+                                    simulation</em></p>
                         </div>
                     </div>
                 </div>
@@ -71,8 +50,9 @@
             <div class="col-sm-6">
                 <br>
                 <h2 class="text-center">Simulation</h2>
-                <hr style="background-color:cadetblue; width: 30%;">
-                <div class="card">
+                <hr style="background-color:rgb(81, 95, 95); width: 30%;">
+                <div class="card bg-white text-white card2">
+                    <img class="card-img" src="" alt="Procedure" id='procedure-image' style="color: black;">
 
                 </div>
                 <div class="container-fluid">
@@ -83,7 +63,7 @@
                                     id='icon'></i>
                                 Start</button>
                             <br>
-                            <h4 id='complete' class='text-success'></h4>
+                            <h4 id='complete' class='text-primary'></h4>
                         </div>
                         <div class="col-sm-6">
                             <button onclick="reset()" type="button" style="width: 80px; border-radius: 10px;"
@@ -93,21 +73,231 @@
                     </div>
 
                 </div>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">Expected Output</h2>
+                <hr style="background-color:rgb(81, 95, 95); width: 30%;">
+                <div class="card" style="border-radius: 10px; height: 100%;">
+                    <div class="card-body">
+                        <h4 class="text-left">X=Time in minutes</h4>
+                        <h4>Y=Burette reading</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-center">X</th>
+                                        <th class="text-center">Y</th>
+                                        <th class="text-center">K</th>
+                                        <th class="text-center">CA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">20.9</td>
+                                        <td class="text-center">0.0079</td>
+                                        <td class="text-center">0.92362</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">20</td>
+                                        <td class="text-center">21.7</td>
+                                        <td class="text-center">0.00791</td>
+                                        <td class="text-center">0.8535</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">30</td>
+                                        <td class="text-center">22.5</td>
+                                        <td class="text-center">0.00788</td>
+                                        <td class="text-center">0.85358</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">40</td>
+                                        <td class="text-center">23.43</td>
+                                        <td class="text-center">0.007841</td>
+                                        <td class="text-center">0.73077</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">50</td>
+                                        <td class="text-center">23.9</td>
+                                        <td class="text-center">0.0077</td>
+                                        <td class="text-center">0.007795</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">60</td>
+                                        <td class="text-center">24.5</td>
+                                        <td class="text-center">0.00774</td>
+                                        <td class="text-center">0.6284</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">70</td>
+                                        <td class="text-center">25.1</td>
+                                        <td class="text-center">0.007683</td>
+                                        <td class="text-center">0.628400</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">80</td>
+                                        <td class="text-center">25.752</td>
+                                        <td class="text-center">0.00761755</td>
+                                        <td class="text-center">0.5436747</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">90</td>
+                                        <td class="text-center">26.83</td>
+                                        <td class="text-center">0.0075</td>
+                                        <td class="text-center">0.507150</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">100</td>
+                                        <td class="text-center">26.82</td>
+                                        <td class="text-center">0.007462</td>
+                                        <td class="text-center">0.474144</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">110</td>
+                                        <td class="text-center">27.302</td>
+                                        <td class="text-center">0.00737</td>
+                                        <td class="text-center">0.44440</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">120</td>
+                                        <td class="text-center">27.76</td>
+                                        <td class="text-center">0.007275</td>
+                                        <td class="text-center">0.417689</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">130</td>
+                                        <td class="text-center">28.182</td>
+                                        <td class="text-center">0.007168</td>
+                                        <td class="text-center">0.4176890</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">140</td>
+                                        <td class="text-center">28.572</td>
+                                        <td class="text-center">0.007053</td>
+                                        <td class="text-center">0.37249</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">150</td>
+                                        <td class="text-center">28.93</td>
+                                        <td class="text-center">0.0069297</td>
+                                        <td class="text-center">0.3536426</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">160</td>
+                                        <td class="text-center">29.256</td>
+                                        <td class="text-center">0.0067968</td>
+                                        <td class="text-center">0.33705</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">170</td>
+                                        <td class="text-center">29.55</td>
+                                        <td class="text-center">0.006655</td>
+                                        <td class="text-center">0.32259</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">180</td>
+                                        <td class="text-center">29.812</td>
+                                        <td class="text-center">0.0066550</td>
+                                        <td class="text-center">0.32259461</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">190</td>
+                                        <td class="text-center">29.812</td>
+                                        <td class="text-center">0.006504</td>
+                                        <td class="text-center">0.2905968</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">200</td>
+                                        <td class="text-center">30.042</td>
+                                        <td class="text-center">0.0063448</td>
+                                        <td class="text-center">0.2811237</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">210</td>
+                                        <td class="text-center">30.24</td>
+                                        <td class="text-center">0.00617</td>
+                                        <td class="text-center">0.27331</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">220</td>
+                                        <td class="text-center">30.406</td>
+                                        <td class="text-center">0.0060</td>
+                                        <td class="text-center">0.2671</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">230</td>
+                                        <td class="text-center">30.54</td>
+                                        <td class="text-center">0.00581</td>
+                                        <td class="text-center">0.005816</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">240</td>
+                                        <td class="text-center">30.642</td>
+                                        <td class="text-center">0.0056</td>
+                                        <td class="text-center">0.2592</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">250</td>
+                                        <td class="text-center">30.75</td>
+                                        <td class="text-center">0.0054263</td>
+                                        <td class="text-center">0.25753</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">260</td>
+                                        <td class="text-center">30.756</td>
+                                        <td class="text-center">0.005221</td>
+                                        <td class="text-center">0.2572</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">270</td>
+                                        <td class="text-center">30.73</td>
+                                        <td class="text-center">0.005011</td>
+                                        <td class="text-center">0.2584405</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">280</td>
+                                        <td class="text-center">30.672</td>
+                                        <td class="text-center">0.00479</td>
+                                        <td class="text-center">0.261069</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">290</td>
+                                        <td class="text-center">30.672</td>
+                                        <td class="text-center">0.00457708</td>
+                                        <td class="text-center">0.265178</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="../JS/FOR.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../JS/FOR.js"></script>
 </body>
 
 </html>
