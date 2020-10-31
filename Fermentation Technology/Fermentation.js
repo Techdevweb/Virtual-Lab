@@ -55,7 +55,7 @@ lst = ['1. Prepare and sterilize 100 ml nutrient broth (given medium) in side ar
     '6. Read the absorbance after every hour and sample out 5 ml of broth after every 3 hrs.(The reason is the significant measurable increase is observed in absorbance over smalltime period which is not possible for dry weight.) Plot a correlation curve ofabsorbance versus dry weight.',
     'Dried culture method',
     '1. Discard the supernatant & centrifuge again by adding 10ml D/W to each tube.(Second method)',
-    '2. Keep the tubes or filter paper in hot air oven (or vacuum oven) at 800C for 24 hrs or1100C for 5 hrs to obtain dry cell mass.',
+    '2. Keep the tubes or filter paper in hot air oven (or vacuum oven) at 80C for 24 hrs or110C for 5 hrs to obtain dry cell mass.',
     '3. Weigh centrifuge tube or filter paper and calculate the dry cell mass.',
     '4. Plot the changes in both parameters with respect to time.',
     ' 5. Measure the growth limiting substrate (in most cases Carbon source i.e. totalcarbohydrate like glucose) initially (at 0 hrs) and finally (after 48 hrs) and calculatethe yield coefficient.']
@@ -115,13 +115,13 @@ function procedure() {
         const text1 = document.querySelector('#line9')
         const text2 = document.querySelector('#procedure')
         text2.innerHTML = '<em>' + lst[8] + '</em>'
-        document.getElementById('procedures').src = '9.jpg'
+        document.getElementById('procedures').src = '9 (1).jpg'
     }
     if (str == 'line10') {
         const text1 = document.querySelector('#line10')
         const text2 = document.querySelector('#procedure')
         text2.innerHTML = '<em>' + lst[9] + '</em>'
-        document.getElementById('procedures').src = '10.gif'
+        document.getElementById('procedures').src = '10 (1).gif'
     }
     if (str == 'line11') {
         const text1 = document.querySelector('#line11')
